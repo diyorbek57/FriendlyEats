@@ -95,7 +95,4 @@
                 android:layout_gravity="bottom|center_horizontal" />
         </LinearLayout>
 
-
-
-
 </RelativeLayout>

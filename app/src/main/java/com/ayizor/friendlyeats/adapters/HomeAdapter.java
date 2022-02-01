@@ -80,7 +80,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
             distance = itemView.findViewById(R.id.tv_restaurant_distance);
         }
     }
-    public int getLastItemId() {
+    public String getLastItemId() {
         return restaurantList.get(restaurantList.size() - 1).getId();
     }
 }

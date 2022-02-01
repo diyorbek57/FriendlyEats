@@ -3,12 +3,12 @@ package com.ayizor.friendlyeats.models;
 public class Restaurant {
     private String name, distance, address, image;
     private double rating;
-    int id;
+    String id;
 
     public Restaurant() {
     }
 
-    public Restaurant(String name, String distance, String address, String image, double rating, int id) {
+    public Restaurant(String name, String distance, String address, String image, double rating, String id) {
         this.name = name;
         this.distance = distance;
         this.address = address;
@@ -57,11 +57,11 @@ public class Restaurant {
         this.image = image;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 }
