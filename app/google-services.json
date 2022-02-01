@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "521694234991",
+    "project_id": "friendlyeats-4107d",
+    "storage_bucket": "friendlyeats-4107d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521694234991:android:312e06f416045f2638809a",
+        "android_client_info": {
+          "package_name": "com.ayizor.friendlyeats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521694234991-ols1hcu98galikl699p9jc478qo4slu6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ayizor.friendlyeats",
+            "certificate_hash": "3c7e4629f2744fb0c72ce7915a057308476cb1ed"
+          }
+        },
+        {
+          "client_id": "521694234991-5ais1c466j4k4j26g16b2j4n52ukabtd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmmsKjwUjMSTr2nCuAN36C0WcWbhlhhpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521694234991-5ais1c466j4k4j26g16b2j4n52ukabtd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
