@@ -64,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         reference = FirebaseDatabase.getInstance().getReference();
         progressBar.setVisibility(View.GONE);
         getProductsDataFromBase();
+
+
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
 
             @Override
@@ -81,17 +83,16 @@ public class MainActivity extends AppCompatActivity {
 
                 currentScientists = layoutManagerV.getChildCount();
                 totalScientists = layoutManagerV.getItemCount();
-                scrolledOutScientists = ((GridLayoutManager) recyclerView.getLayoutManager()).
-                        findFirstVisibleItemPosition();
+                scrolledOutScientists = ((GridLayoutManager) recyclerView.getLayoutManager()).findFirstVisibleItemPosition();
 
-                if (isScrolling && (currentScientists + scrolledOutScientists ==
-                        totalScientists)) {
+                if (isScrolling && (currentScientists + scrolledOutScientists == totalScientists)) {
                     isScrolling = false;
 
                     if (dy > 0) {
                         // Scrolling up
                         if (!reachedEnd) {
                             getProductsDataFromBase();
+                            adapter.notifyDataSetChanged();
                             progressBar.setVisibility(View.VISIBLE);
                         } else {
                             Toast.makeText(MainActivity.this, "No More Item Found", Toast.LENGTH_SHORT).show();
@@ -132,7 +133,6 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     Restaurant restaurant = dataSnapshot.getValue(Restaurant.class);
-
                     arrayList.add(restaurant);
                 }
                 if (arrayList.size() > 0) {

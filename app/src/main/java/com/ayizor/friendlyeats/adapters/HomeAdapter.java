@@ -15,6 +15,7 @@ import com.ayizor.friendlyeats.models.Restaurant;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder> {
     ArrayList<Restaurant> restaurantList;
@@ -80,7 +81,6 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
             distance = itemView.findViewById(R.id.tv_restaurant_distance);
         }
     }
-    public String getLastItemId() {
-        return restaurantList.get(restaurantList.size() - 1).getId();
-    }
+
+
 }
